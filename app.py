@@ -6,7 +6,7 @@ import pandas as pd
 app = Flask(__name__)
 # Load the model
 model = pickle.load(open("regmodel.pkl","rb"))
-scaler = pickle.load(open("scaler.pkl","rb"))
+scaler = pickle.load(open("scaling.pkl","rb"))
 
 @app.route('/')
 def home():
